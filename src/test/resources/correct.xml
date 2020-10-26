@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tariffs xmlns="tariff.schema"
+         xmlns:def="http://www.w3.org/2001/XMLSchema-instance"
+         def:schemaLocation="tariff.schema schema.xsd">
+
+    <internet-tariff tariff-id="I10001">
+        <tariff-name>InternetFirst</tariff-name>
+        <operator-name>velcom</operator-name>
+        <payroll>25</payroll>
+        <sms-price>0.2</sms-price>
+        <call-price>
+            <internal-calls>0.3</internal-calls>
+            <external-calls>0.8</external-calls>
+            <landline-calls>1.5</landline-calls>
+        </call-price>
+        <free-internet-mb>300</free-internet-mb>
+        <free-social-media>vk</free-social-media>
+        <free-social-media>instagram</free-social-media>
+    </internet-tariff>
+
+    <internet-tariff tariff-id="I10002">
+        <tariff-name>InternetSecond</tariff-name>
+        <operator-name>life</operator-name>
+        <payroll>15</payroll>
+        <sms-price>0.5</sms-price>
+        <call-price>
+            <internal-calls>0.5</internal-calls>
+            <external-calls>1.5</external-calls>
+            <landline-calls>2.5</landline-calls>
+        </call-price>
+        <free-internet-mb>300</free-internet-mb>
+            <free-social-media>twitter</free-social-media>
+    </internet-tariff>
+
+    <speak-tariff tariff-id="S10001">
+        <tariff-name>SpeakFirst</tariff-name>
+        <operator-name>mts</operator-name>
+        <payroll>30</payroll>
+        <sms-price>0.1</sms-price>
+        <call-price>
+            <internal-calls>0.1</internal-calls>
+            <external-calls>0.3</external-calls>
+            <landline-calls>1</landline-calls>
+        </call-price>
+        <free-minutes-abroad>150</free-minutes-abroad>
+        <favourite-number>375291012908</favourite-number>
+        <favourite-number>291122341</favourite-number>
+        <favourite-number>375444563210</favourite-number>
+    </speak-tariff>
+
+    <speak-tariff tariff-id="S10002">
+        <tariff-name>SpeakSecond</tariff-name>
+        <operator-name>velcom</operator-name>
+        <payroll>10</payroll>
+        <sms-price>0.2</sms-price>
+        <call-price>
+            <internal-calls>0.4</internal-calls>
+            <external-calls>0.9</external-calls>
+            <landline-calls>1</landline-calls>
+        </call-price>
+        <free-minutes-abroad>150</free-minutes-abroad>
+        <favourite-number>375291111111</favourite-number>
+    </speak-tariff>
+
+
+</tariffs>
