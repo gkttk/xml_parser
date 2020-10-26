@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:ts="tariff.schema"
+        targetNamespace="tariff.schema"
+        elementFormDefault="qualified">
+
+    <element name="tariffs" type="ts:tariffs-type"/>
+
+
+    <!-- complex types -->
+    <complexType name="tariffs-type">
+        <sequence>
+            <element name="internet-tariff" type="ts:internet-tariff-type" minOccurs="0" maxOccurs="3"/>
+            <element name="speak-tariff" type="ts:speak-tariff-type" minOccurs="0" maxOccurs="3"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="tariff-type" abstract="true">
+        <sequence>
+            <element name="tariff-name" type="ts:tariff-name-type"/>
+            <element name="operator-name" type="ts:operator-name-type"/>
+            <element name="payroll" type="ts:decimal-price-type"/>
+            <element name="sms-price" type="ts:decimal-price-type"/>
+            <element name="call-price" type="ts:call-price-type"/>
+        </sequence>
+        <attribute name="tariff-id" type="ts:tariff-id-type" use="required"/>
+    </complexType>
+
+    <complexType name="internet-tariff-type">
+        <complexContent>
+            <extension base="ts:tariff-type">
+                <sequence>
+                    <element name="free-internet-mb" type="positiveInteger" default="300"/>
+                    <element name="free-social-media" type="ts:free-social-media-type" minOccurs="0" maxOccurs="3"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="speak-tariff-type">
+        <complexContent>
+            <extension base="ts:tariff-type">
+                <sequence>
+                    <element name="free-minutes-abroad" type="positiveInteger" default="150"/>
+                    <element name="favourite-number" type="ts:phone-number-type" minOccurs="0" maxOccurs="5"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="call-price-type">
+        <sequence>
+            <element name="internal-calls" type="ts:decimal-price-type"/>
+            <element name="external-calls" type="ts:decimal-price-type"/>
+            <element name="landline-calls" type="ts:decimal-price-type"/>
+        </sequence>
+    </complexType>
+
+    <!--simple types -->
+
+    <simpleType name="tariff-id-type">
+        <restriction base="ID">
+            <pattern value="[S|I][\d]{5}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="phone-number-type">
+        <restriction base="string">
+            <minLength value="9"/>
+            <maxLength value="12"/>
+            <pattern value="([\d]{3})?[\d]{9}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="free-social-media-type">
+        <restriction base="string">
+            <enumeration value="vk"/>
+            <enumeration value="instagram"/>
+            <enumeration value="twitter"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="tariff-name-type">
+        <restriction base="string">
+            <minLength value="3"/>
+            <maxLength value="14"/>
+        </restriction>
+    </simpleType>
+
+
+    <simpleType name="operator-name-type">
+        <restriction base="string">
+            <enumeration value="mts"/>
+            <enumeration value="velcom"/>
+            <enumeration value="life"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="decimal-price-type">
+        <restriction base="decimal">
+            <minInclusive value="0"/>
+        </restriction>
+    </simpleType>
+
+</schema>

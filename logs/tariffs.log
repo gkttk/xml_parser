@@ -1,0 +1,39 @@
+2020-10-24 15:45:22,585 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:src/test/resources/incorrect.xml, with given schema:src/test/resources/schema.xsd
+Exception:org.xml.sax.SAXParseException; systemId: file:///D:/Projects/epam/XMLParser/src/test/resources/incorrect.xml; lineNumber: 23; columnNumber: 41; cvc-complex-type.2.4.a: Invalid content was found starting with element 'internet-tariff'. One of '{"tariff.schema":speak-tariff}' is expected.
+2020-10-24 15:47:10,274 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:, with given schema:
+Exception:org.xml.sax.SAXParseException; systemId: file:/D:/Projects/epam/XMLParser/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+2020-10-24 16:07:05,463 ERROR c.g.g.e.x.l.p.s.h.TariffHandler [main] Wrong parameter in xml:tariff-name1, value:SpeakFirst
+2020-10-25 15:05:52,405 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:src/test/resources/incorrect.xml, with given schema:src/test/resources/schema.xsd
+Exception:org.xml.sax.SAXParseException; systemId: file:///D:/Projects/epam/XMLParser/src/test/resources/incorrect.xml; lineNumber: 7; columnNumber: 23; cvc-complex-type.2.4.a: Invalid content was found starting with element 'tariff-name1'. One of '{"tariff.schema":tariff-name}' is expected.
+2020-10-25 15:05:52,412 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:, with given schema:
+Exception:org.xml.sax.SAXParseException; systemId: file:/D:/Projects/epam/XMLParser/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+2020-10-25 15:31:44,330 ERROR c.g.g.e.x.l.p.s.h.TariffHandler [main] Wrong parameter in xml:tariff-name1, value:SpeakFirst
+2020-10-25 15:33:37,934 ERROR c.g.g.e.x.l.p.s.h.TariffHandler [main] Wrong parameter in xml:tariff-name1, value:SpeakFirst
+2020-10-25 15:42:59,406 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:src/test/resources/incorrect.xml, with given schema:src/test/resources/schema.xsd
+Exception:org.xml.sax.SAXParseException; systemId: file:///D:/Projects/epam/XMLParser/src/test/resources/incorrect.xml; lineNumber: 7; columnNumber: 23; cvc-complex-type.2.4.a: Invalid content was found starting with element 'tariff-name1'. One of '{"tariff.schema":tariff-name}' is expected.
+2020-10-25 15:42:59,413 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:, with given schema:
+Exception:org.xml.sax.SAXParseException; systemId: file:/D:/Projects/epam/XMLParser/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+2020-10-25 16:06:16,636 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:src/test/resources/incorrect.xml, with given schema:src/test/resources/schema.xsd
+Exception:org.xml.sax.SAXParseException; systemId: file:///D:/Projects/epam/XMLParser/src/test/resources/incorrect.xml; lineNumber: 7; columnNumber: 23; cvc-complex-type.2.4.a: Invalid content was found starting with element 'tariff-name1'. One of '{"tariff.schema":tariff-name}' is expected.
+2020-10-25 16:06:16,646 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:, with given schema:
+Exception:org.xml.sax.SAXParseException; systemId: file:/D:/Projects/epam/XMLParser/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+2020-10-26 11:36:13,481 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:src/test/resources/incorrect.xml, with given schema:src/test/resources/schema.xsd
+Exception:org.xml.sax.SAXParseException; systemId: file:///D:/Projects/epam/XMLParser/src/test/resources/incorrect.xml; lineNumber: 7; columnNumber: 23; cvc-complex-type.2.4.a: Invalid content was found starting with element 'tariff-name1'. One of '{"tariff.schema":tariff-name}' is expected.
+2020-10-26 11:36:13,490 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:, with given schema:
+Exception:org.xml.sax.SAXParseException; systemId: file:/D:/Projects/epam/XMLParser/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+2020-10-26 11:39:58,911 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:src/test/resources/incorrect.xml, with given schema:src/test/resources/schema.xsd
+Exception:org.xml.sax.SAXParseException; systemId: file:///D:/Projects/epam/XMLParser/src/test/resources/incorrect.xml; lineNumber: 7; columnNumber: 23; cvc-complex-type.2.4.a: Invalid content was found starting with element 'tariff-name1'. One of '{"tariff.schema":tariff-name}' is expected.
+2020-10-26 11:39:58,918 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:, with given schema:
+Exception:org.xml.sax.SAXParseException; systemId: file:/D:/Projects/epam/XMLParser/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+2020-10-26 11:46:18,413 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:src/test/resources/incorrect.xml, with given schema:src/test/resources/schema.xsd
+Exception:org.xml.sax.SAXParseException; systemId: file:///D:/Projects/epam/XMLParser/src/test/resources/incorrect.xml; lineNumber: 7; columnNumber: 23; cvc-complex-type.2.4.a: Invalid content was found starting with element 'tariff-name1'. One of '{"tariff.schema":tariff-name}' is expected.
+2020-10-26 11:46:18,420 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:, with given schema:
+Exception:org.xml.sax.SAXParseException; systemId: file:/D:/Projects/epam/XMLParser/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+2020-10-26 12:09:37,477 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:src/test/resources/incorrect.xml, with given schema:src/test/resources/schema.xsd
+Exception:org.xml.sax.SAXParseException; systemId: file:///D:/Projects/epam/XMLParser/src/test/resources/incorrect.xml; lineNumber: 7; columnNumber: 23; cvc-complex-type.2.4.a: Invalid content was found starting with element 'tariff-name1'. One of '{"tariff.schema":tariff-name}' is expected.
+2020-10-26 12:09:37,485 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:, with given schema:
+Exception:org.xml.sax.SAXParseException; systemId: file:/D:/Projects/epam/XMLParser/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+2020-10-26 12:11:56,856 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:src/test/resources/incorrect.xml, with given schema:src/test/resources/schema.xsd
+Exception:org.xml.sax.SAXParseException; systemId: file:///D:/Projects/epam/XMLParser/src/test/resources/incorrect.xml; lineNumber: 7; columnNumber: 23; cvc-complex-type.2.4.a: Invalid content was found starting with element 'tariff-name1'. One of '{"tariff.schema":tariff-name}' is expected.
+2020-10-26 12:11:56,865 WARN c.g.g.e.x.l.v.TariffValidator [main] Can't validate the file:, with given schema:
+Exception:org.xml.sax.SAXParseException; systemId: file:/D:/Projects/epam/XMLParser/; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
